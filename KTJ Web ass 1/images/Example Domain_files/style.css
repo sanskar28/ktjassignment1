@@ -1,0 +1,166 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/background1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.bar{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.bar li{
+    display: inline;
+}
+.bar li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    margin: 0px;
+    
+    size: 140%;
+    transition: ease 0.6s;
+    cursor: pointer;
+}
+.bar  li a:hover{
+    background-color: white;
+    color: black;
+}
+.bar li.active a{
+    background-color: white;
+    color: black;
+}
+#logo img{
+    height: 100px;
+    float: left;
+    
+}
+.main{
+    max-width: 1200px;
+    margin:auto;
+}
+#title{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    
+    
+}
+#title h1{
+    text-align: center;
+    color: white;
+    font-size:1000%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#title p{
+    margin-top: 0;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 270%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#title ul{
+    padding-top: 100px;
+    margin-left: 500px;
+    float: none;
+    list-style-type: none;
+    margin-top: 25px;
+    float: none;
+}
+#title ul li{
+    display: inline;
+}
+#title ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    margin: 0px;
+    font-size: 250%;
+    cursor: pointer;
+    border: solid lightblue whitesmoke 1px;
+    size: 20%;
+    transition: ease 0.6s;
+}
+#title ul li a:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.card{
+    float: left;
+    padding: 40px;
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 120px 40px;
+    grid-template-areas: "image" "text" "stats";
+
+    font-family:  roboto;
+    border-radius: 18px;
+    background: white;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.card-image{
+    grid-area: image;
+
+}
+.card-image img{
+    height: 210px;
+    width: 300px;
+    border-top-left-radius: 18px;
+    border-top-right-radius:18px ;
+}
+.card-text{
+    grid-area: text;
+    border: black 1px solid;
+    border-bottom: none;
+}
+.card-text h2{
+    text-align: center;
+    color: red;
+    font-size: 200%;
+
+
+}
+.card-text p{
+    text-align: center;
+    
+
+}
+
+.card-stats{
+    grid-area: stats;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(255, 0, 191);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.card-stats2{
+    grid-area: stats;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(255, 136, 0);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+body div h1{
+    text-align: center;
+    font-size: 200%;
+}

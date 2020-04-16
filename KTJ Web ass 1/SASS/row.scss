@@ -1,0 +1,65 @@
+
+.row{
+    
+    
+    max-width: $grid-width;
+    margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+    &-5{
+        margin-bottom: 0 !important;
+    }
+    &-4{
+        max-width: 87rem;
+
+        padding-bottom: 10rem;
+        
+    }
+   
+    
+    @include clearfix;
+}
+.col-1-of-2{
+   background-color:none;
+    float: left;
+   
+
+    width: calc((90%-#{$gutter-vertical})/2);
+    &:not(:last-child){
+        margin-right:$gutter-horizontal ;
+       
+    }}
+    
+    .col-1-of-3{
+      
+         float: left;
+        
+        
+         width: calc((85%-30rem)/3);
+         &:not(:last-child){
+             margin-right:$gutter-horizontal ;
+            
+         }}
+         .col-1-of-4{
+      
+            float: left;
+           
+           
+            width: calc((75%-30rem)/4);
+            &:not(:last-child){
+                margin-right:7.1rem ;
+
+               
+            }}    
+            .col-1-of-5{
+                height: calc((75%-30rem)/5);
+                float: left;
+              
+               
+                width: calc((75%-30rem)/5);
+                &:not(:last-child){
+                    margin-right:$gutter-horizontal ;
+                   
+                }}     
+             
