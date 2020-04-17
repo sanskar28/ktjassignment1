@@ -3,7 +3,14 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: top;
+  overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+  @media (max-width: 700px) {
+    header {
+      height: 300px; } }
+  @media (max-width: 390px) {
+    header {
+      height: 250px; } }
 
 .home {
   max-width: 120.0rem;
@@ -40,6 +47,12 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%; }
+  @media (max-width: 700px) {
+    #title {
+      top: 175px; } }
+  @media (max-width: 400px) {
+    #title {
+      top: 140px; } }
   #title h1 {
     animation: moveleft 2s;
     display: block;
@@ -120,6 +133,7 @@ header {
 .most {
   background-color: #eef1f1;
   padding-bottom: 25rem;
+  overflow: hidden;
   padding-top: 15rem;
   z-index: 1; }
   .most-card {
@@ -191,6 +205,7 @@ header {
 
 .launching {
   background-color: #eaf5f3;
+  overflow: hidden;
   margin-top: -20vh; }
   .launching_heading {
     text-align: center;
@@ -288,6 +303,7 @@ header {
   margin-top: 0;
   background-image: linear-gradient(to bottom, #eaf5f3, #b4e2e6);
   background-size: cover;
+  overflow: hidden;
   background-position: top;
   padding-bottom: 100vh; }
   .surprise_heading {
@@ -385,7 +401,8 @@ header {
 .input {
   background-image: linear-gradient(to bottom, #00c3ff, #b4e2e6);
   margin-top: -10rem;
-  padding-top: 15rem; }
+  padding-top: 15rem;
+  overflow: hidden; }
   .input-box {
     background-image: linear-gradient(100deg, rgba(228, 228, 228, 0.87) 0%, rgba(228, 228, 228, 0.87) 50%, transparent 50%), url(../images/background-5.jpg);
     height: 60rem;
@@ -466,10 +483,11 @@ header {
 .popup {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100000;
+  z-index: 10000;
   background-color: rgba(0, 0, 0, 0.808);
   opacity: 0;
   visibility: hidden; }
@@ -523,7 +541,7 @@ header {
       .popup-content-terms p {
         margin: 2rem 6rem;
         margin-bottom: 5rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         text-align: justify;
         column-count: 2;
         column-gap: 2rem;
@@ -547,7 +565,8 @@ header {
 .footer {
   background-color: #3f3f3f;
   width: 100%;
-  height: 38rem; }
+  height: 38rem;
+  overflow: hidden; }
   .footer-logo {
     text-align: center; }
     .footer-logo img {
@@ -597,21 +616,48 @@ header {
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
-
-body {
-  padding: 0; }
-
-.top {
-  position: fixed;
-  bottom: 5rem;
-  right: 5rem; }
-  .top img {
-    height: 5rem;
-    width: 5rem; }
-    .top img:hover {
-      cursor: pointer; }
+  @media (max-width: 1376px) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 1080px) {
+    html {
+      font-size: 55%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 45%; } }
+  @media (max-width: 700px) {
+    html {
+      font-size: 40%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 33%; } }
+  @media (max-width: 500px) {
+    html {
+      font-size: 30%; } }
+  @media (max-width: 450px) {
+    html {
+      font-size: 26%; } }
+  @media (max-width: 390px) {
+    html {
+      font-size: 22%; } }
+  @media (max-width: 330px) {
+    html {
+      font-size: 19%; } }
+  @media (max-width: 290px) {
+    html {
+      font-size: 15.2%; } }
+  html * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; }
+  html body {
+    padding: 0; }
+  html .top {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem; }
+    html .top img {
+      height: 5rem;
+      width: 5rem; }
+      html .top img:hover {
+        cursor: pointer; }
