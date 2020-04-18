@@ -645,7 +645,13 @@ html {
       font-size: 19%; } }
   @media (max-width: 290px) {
     html {
-      font-size: 15.2%; } }
+      font-size: 14%; } }
+  @media (max-width: 240px) {
+    html {
+      font-size: 10%; } }
+  @media (max-width: 150px) {
+    html {
+      font-size: 7%; } }
   html * {
     margin: 0;
     padding: 0;
