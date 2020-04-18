@@ -130,6 +130,90 @@ header {
     opacity: 1;
     transform: translateY(0); } }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  @media (max-width: 1080px) {
+    .row {
+      margin-top: 2rem; } }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row-5 {
+    margin-bottom: 0 !important; }
+  .row-4 {
+    max-width: 87rem;
+    padding-bottom: 10rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.col-1-of-2 {
+  background-color: none;
+  float: left;
+  width: calc((90%-8rem)/2); }
+  .col-1-of-2:not(:last-child) {
+    margin-right: 6rem; }
+
+.col-1-of-3 {
+  float: left;
+  width: calc((85%-30rem)/3); }
+  .col-1-of-3:not(:last-child) {
+    margin-right: 6rem; }
+
+.col-1-of-4 {
+  float: left;
+  height: calc((75%-30rem)/5);
+  width: calc((75%-30rem)/4); }
+  @media (max-width: 1080px) {
+    .col-1-of-4 {
+      width: calc((71%-30rem)/4); } }
+  @media (max-width: 900px) {
+    .col-1-of-4 {
+      width: calc((69%-30rem)/4); } }
+  @media (max-width: 700px) {
+    .col-1-of-4 {
+      width: calc((68%-30rem)/4); } }
+  @media (max-width: 600px) {
+    .col-1-of-4 {
+      width: calc((67%-30rem)/4); } }
+  @media (max-width: 500px) {
+    .col-1-of-4 {
+      width: calc((66%-30rem)/4); } }
+  @media (max-width: 390px) {
+    .col-1-of-4 {
+      width: calc((65%-30rem)/4); } }
+  .col-1-of-4:not(:last-child) {
+    margin-right: 7.1rem; }
+
+.col-1-of-5 {
+  height: calc((75%-30rem)/5);
+  float: left;
+  width: calc((75%-30rem)/5); }
+  @media (max-width: 1080px) {
+    .col-1-of-5 {
+      width: calc((70%-30rem)/4); } }
+  @media (max-width: 900px) {
+    .col-1-of-5 {
+      width: calc((69%-30rem)/4); } }
+  @media (max-width: 700px) {
+    .col-1-of-5 {
+      width: calc((68%-30rem)/4); } }
+  @media (max-width: 600px) {
+    .col-1-of-5 {
+      width: calc((67%-30rem)/4); } }
+  @media (max-width: 500px) {
+    .col-1-of-5 {
+      width: calc((66%-30rem)/4); } }
+  @media (max-width: 390px) {
+    .col-1-of-5 {
+      width: calc((65%-30rem)/4); } }
+  @media (max-width: 1080px) {
+    .col-1-of-5s {
+      display: none; } }
+  .col-1-of-5:not(:last-child) {
+    margin-right: 6rem; }
+
 .most {
   background-color: #eef1f1;
   padding-bottom: 25rem;
@@ -141,8 +225,14 @@ header {
     margin: 0 auto;
     background-color: rgba(177, 238, 233, 0.719);
     transform: skewx(-8deg); }
+    @media (max-width: 1080px) {
+      .most-card {
+        transform: skewX(0); } }
     .most-card > * {
       transform: skewX(8deg); }
+      @media (max-width: 1080px) {
+        .most-card > * {
+          transform: skewX(0); } }
   .most-head {
     text-align: center;
     padding-bottom: 5rem;
@@ -169,6 +259,22 @@ header {
   border-radius: 50%;
   float: left;
   overflow: hidden; }
+  @media (max-width: 1080px) {
+    .circle {
+      width: 17rem;
+      height: 17rem; } }
+  @media (max-width: 900px) {
+    .circle {
+      width: 16.5rem;
+      height: 16.5rem; } }
+  @media (max-width: 700px) {
+    .circle {
+      width: 16rem;
+      height: 16rem; } }
+  @media (max-width: 500px) {
+    .circle {
+      width: 15.5rem;
+      height: 15.5rem; } }
   .circle-image {
     height: 100%;
     position: absolute;
@@ -176,6 +282,9 @@ header {
     top: 50%;
     transform: translate(-50%, -50%) skewX(8deg);
     transition: all .5s; }
+    @media (max-width: 1080px) {
+      .circle-image {
+        transform: translate(-50%, -50%) skewX(0deg); } }
   .circle-caption {
     color: white;
     position: absolute;
@@ -211,6 +320,9 @@ header {
     text-align: center;
     padding-top: 30vh;
     display: block; }
+    @media (max-width: 390px) {
+      .launching_heading {
+        padding-top: 20vh; } }
     .launching_heading h1 {
       text-align: center;
       font-weight: bold;
@@ -255,48 +367,8 @@ header {
   padding-top: 3rem; }
 
 .launchingpara {
-  font-size: 1.6rem; }
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row-5 {
-    margin-bottom: 0 !important; }
-  .row-4 {
-    max-width: 87rem;
-    padding-bottom: 10rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.col-1-of-2 {
-  background-color: none;
-  float: left;
-  width: calc((90%-8rem)/2); }
-  .col-1-of-2:not(:last-child) {
-    margin-right: 6rem; }
-
-.col-1-of-3 {
-  float: left;
-  width: calc((85%-30rem)/3); }
-  .col-1-of-3:not(:last-child) {
-    margin-right: 6rem; }
-
-.col-1-of-4 {
-  float: left;
-  width: calc((75%-30rem)/4); }
-  .col-1-of-4:not(:last-child) {
-    margin-right: 7.1rem; }
-
-.col-1-of-5 {
-  height: calc((75%-30rem)/5);
-  float: left;
-  width: calc((75%-30rem)/5); }
-  .col-1-of-5:not(:last-child) {
-    margin-right: 6rem; }
+  font-size: 1.6rem;
+  text-align: justify; }
 
 .surprise {
   padding-top: 20vh;
@@ -305,7 +377,22 @@ header {
   background-size: cover;
   overflow: hidden;
   background-position: top;
-  padding-bottom: 100vh; }
+  padding-bottom: 50vh; }
+  @media (max-width: 700px) {
+    .surprise {
+      padding-top: 10vh; } }
+  @media (max-width: 500px) {
+    .surprise {
+      padding-top: 5vh; } }
+  @media (max-width: 1376px) {
+    .surprise {
+      padding-bottom: 70px; } }
+  @media (max-width: 700px) {
+    .surprise {
+      padding-bottom: 40px; } }
+  @media (max-width: 500px) {
+    .surprise {
+      padding-bottom: 20px; } }
   .surprise_heading {
     text-align: center;
     display: block; }
@@ -327,7 +414,8 @@ header {
   margin-top: 10rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative; }
+  position: relative;
+  height: 50rem; }
   .card-back {
     transform: rotateY(180deg);
     background-image: linear-gradient(to bottom right, rgba(0, 195, 255, 0.801), rgba(0, 255, 221, 0.781)); }
@@ -380,7 +468,7 @@ header {
       list-style-type: none;
       text-decoration: none;
       text-align: center;
-      width: 80%;
+      width: 65%;
       margin: 0 auto; }
       .card-text ul li {
         text-align: center;
@@ -415,12 +503,18 @@ header {
     height: 10rem;
     transform: skewX(-10deg);
     margin-top: 3rem; }
+    @media (max-width: 390px) {
+      .input-card {
+        height: 40px; } }
     .input-card-1 {
       margin-left: 5rem; }
     .input-card-2 {
       margin-left: 4rem; }
     .input-card-3 {
       margin-left: 3.4rem; }
+      @media (max-width: 390px) {
+        .input-card-3 {
+          display: none; } }
     .input-card h2 {
       padding-top: 2rem; }
     .input-card p {
