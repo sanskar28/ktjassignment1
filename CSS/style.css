@@ -589,8 +589,10 @@ header {
     opacity: 1;
     visibility: visible; }
   .popup-content {
+    position: relative;
     width: 75%;
     height: 50rem;
+    overflow: hidden;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.253);
     position: absolute;
@@ -653,6 +655,13 @@ header {
       padding: 1rem;
       border-radius: 100px;
       transition: all .2s; }
+      @media (max-width: 1080px) {
+        .popup-content-button {
+          position: absolute;
+          right: 21%;
+          top: 95%;
+          transform: translate(-50%, -50%);
+          opacity: .6; } }
       .popup-content-button:hover {
         background-color: #0f2dda; }
 
